@@ -8,7 +8,7 @@ SemaPhilosoph::SemaPhilosoph(size_t id, Fork& lFork, Fork& rFork, Semaphor& sema
 }
 
 void SemaPhilosoph::operator()() {
-    while(!isRunning) {
+    while(isRunning) {
         think();
         semaphor.acquire();
         leftFork.mutex.lock();
