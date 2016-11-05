@@ -23,7 +23,7 @@ public:
     virtual ~Philosoph();
 
 protected:
-    bool isRunning {false};
+    bool isRunning {true};
     const size_t id = 0;
     size_t eatCounter = 0;
     Fork& leftFork;

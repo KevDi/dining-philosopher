@@ -17,7 +17,7 @@ void Philosoph::think() const {
 }
 
 void Philosoph::stop() {
-    isRunning = true;
+    isRunning = false;
 }
 
 size_t Philosoph::getEatCounter() const {
