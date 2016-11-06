@@ -1,7 +1,14 @@
+#include <iostream>
+#include <DiningPhilosopher/Globals.h>
 #include "DiningPhilosopher/Runner.h"
 
+
 int main() {
-    //SemaDinning(10);
-    LRDinning(10);
+    SemaDinning(philosophers);
+    LRDinning(philosophers);
+    LLRDinning(philosophers);
+    CoordinateDinning(philosophers);
+    WaitReleaseDinning(philosophers);
+    RandomWaitReleaseDinning(philosophers);
     return 0;
 }
